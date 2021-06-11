@@ -1,0 +1,18 @@
+C:\Users\ASUS\Desktop\store\store\bin\Debug\store.exe.config
+C:\Users\ASUS\Desktop\store\store\bin\Debug\store.exe
+C:\Users\ASUS\Desktop\store\store\bin\Debug\store.pdb
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\store\store\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS\Desktop\store\store\obj\Debug\App.g.cs
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store_MarkupCompile.cache
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store_MarkupCompile.lref
+C:\Users\ASUS\Desktop\store\store\obj\Debug\MainWindow.baml
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.g.resources
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.Properties.Resources.resources
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.exe
+C:\Users\ASUS\Desktop\store\store\obj\Debug\store.pdb
+C:\Users\User\Desktop\store - Copy\store\bin\Debug\store.exe.config
+C:\Users\User\Desktop\store - Copy\store\obj\Debug\store.exe
+C:\Users\User\Desktop\store - Copy\store\obj\Debug\store.pdb
