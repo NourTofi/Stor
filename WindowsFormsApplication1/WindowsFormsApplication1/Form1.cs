@@ -16,52 +16,28 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            // انشاء غرض من الصف نموذج
             Form2 f = new Form2();
             string user = textBox1.Text;
             string pass = textBox2.Text;
-
             if (user == "امير" && pass == "123")
             {
-                // تسمية النموذج الثاني بعبارة مرحبا بك + الاسم المدخل في صندوق النص 1
                 f.Text = "مرحبا بك : " + user;
-                //استدعاء التابع اظهار لاظهار النموذج الثاني 
                 f.Show();
             }
             else
             {
                 MessageBox.Show("اسم المستخدم او كلمة السر غير صحيحة ");
             }
-
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
-        //لتفعيل زر الدخول
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string user = textBox1.Text;
             string pass = textBox2.Text;
-
-            if (user != "" && pass != "")
-            {
-                mb1.Enabled = true;
-            }else
-            {
-                mb1.Enabled = false;
-            }
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            string user = textBox1.Text;
-            string pass = textBox2.Text;
-
             if (user != "" && pass != "")
             {
                 mb1.Enabled = true;
@@ -71,24 +47,30 @@ namespace WindowsFormsApplication1
                 mb1.Enabled = false;
             }
         }
-        //*********************************
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            string user = textBox1.Text;
+            string pass = textBox2.Text;
+            if (user != "" && pass != "")
+            {
+                mb1.Enabled = true;
+            }
+            else
+            {
+                mb1.Enabled = false;
+            }
+        }
         private void Label1_Click(object sender, EventArgs e)
         {
-
         }
-
         private void Mb1_Click(object sender, EventArgs e)
         {
-            // انشاء غرض من الصف نموذج
             Form2 f = new Form2();
             string user = textBox1.Text;
             string pass = textBox2.Text;
-
             if (user == "امير" && pass == "123")
             {
-                // تسمية النموذج الثاني بعبارة مرحبا بك + الاسم المدخل في صندوق النص 1
                 f.Text = "مرحبا بك : " + user;
-                //استدعاء التابع اظهار لاظهار النموذج الثاني 
                 f.Show();
             }
             else

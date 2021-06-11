@@ -5,31 +5,25 @@ using System.Text;
 using System.IO;
 namespace WindowsFormsApplication1
 {
-    // انشاء صف متجر
     public class store
     {
-        //التصريح عن المتحولات  
         private string title_device;
         private string id_device;
         private string type_device;
         private double price_device;
         private string is_sall;
 
-        // انشاء باني  
         public store(string ti, string id, string ty, double p, string s)
         {
-            // اسناد القيم الى متحولات القسم الخاص
             title_device = ti;
             id_device = id;
             type_device = ty;
             price_device = p;
             is_sall = s;
         }
-        // انشاء الباني الافتراضي
         public store()
         { }
 
-        //انشاء سيت وكيت لجميع المتحولات 
         public string Title
         {
             set { title_device = value; }
@@ -56,7 +50,6 @@ namespace WindowsFormsApplication1
             set { is_sall = value; }
             get { return is_sall; }
         }
-        //تابع التحقق
         public double jard()
         {
             StreamWriter sw = new StreamWriter("s.txt", true);
@@ -96,16 +89,12 @@ namespace WindowsFormsApplication1
             sr.Close();
             return true;
         }
-        //تابع لاضافة البينات على الملف 
         public void save()
         {
-
             StreamWriter sw = new StreamWriter("s.txt", true);
             sw.WriteLine(title_device + '_' + id_device + '_' + type_device + '_' + price_device + '_' + is_sall);
             sw.Close();
-
         }
-        //كود البحث حسب الرقم
         public static List<store> id_search(string id)
         {
             StreamWriter sw = new StreamWriter("s.txt", true);
@@ -126,9 +115,6 @@ namespace WindowsFormsApplication1
             sr.Close();
             return temp;
         }
-
-
-        //كود البحث حسب النوع
         public static List<store> type_Search(string typee)
         {
             StreamWriter sw = new StreamWriter("s.txt", true);
@@ -149,8 +135,6 @@ namespace WindowsFormsApplication1
             sr.Close();
             return temp;
         }
-
-        //تابع الحذف
         public static void deletion(string ere)
         {
             StreamReader sr = new StreamReader("s.txt");
@@ -173,8 +157,6 @@ namespace WindowsFormsApplication1
             File.Copy("se.txt", "s.txt");
             File.Delete("se.txt");
         }
-
-        //تابع لاضافة العناصر على واجهة عرض البيانات 
         public static List<store> print_for_data()
         {
             StreamWriter sw = new StreamWriter("s.txt", true);
